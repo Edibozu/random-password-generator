@@ -1,6 +1,95 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Possible character variables
+var lowerCase = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
+var upperCase = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
+var num = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var special = [
+  "!",
+  "@",
+  "#",
+  "$",
+  "%",
+  "^",
+  "&",
+  "*",
+  "(",
+  ")",
+  "-",
+  "_",
+  "=",
+  "+",
+  "[",
+  "]",
+  "{",
+  "}",
+  "<",
+  ">",
+  ",",
+  ".",
+  "/",
+  "?",
+  ":",
+  ":",
+  "~",
+  "`",
+];
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -11,15 +100,18 @@ function writePassword() {
 
 function generatePassword() {
   var howManyCharacters = prompt(
+    "How many characaters would you like the password to be, between 8-128"
+  );
 
-    "How many characaters would you like the password to be, between 8-128");
-
-    var lowerCaseCharacters = confirm("Would you like to include lowercase characters?");
-    var upperCaseCharacters = confirm("Would you like to include uppercase characters?");
-    var numChar = confirm("Would you like to include numeric characters?");
-    var specChar = confirm("Would you like to include special characters?")
+  var lowerCaseCharacters = confirm(
+    "Would you like to include lowercase characters?"
+  );
+  var upperCaseCharacters = confirm(
+    "Would you like to include uppercase characters?"
+  );
+  var numChar = confirm("Would you like to include numeric characters?");
+  var specChar = confirm("Would you like to include special characters?");
 }
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
