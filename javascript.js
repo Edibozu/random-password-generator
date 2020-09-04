@@ -13,7 +13,13 @@ function generatePassword() {
   var howManyCharacters = prompt(
 
     "How many characaters would you like the password to be, between 8-128");
+
+    var lowerCaseCharacters = confirm("Would you like to include lowercase characters?");
+    var upperCaseCharacters = confirm("Would you like to include uppercase characters?");
+    var numChar = confirm("Would you like to include numeric characters?");
+    var specChar = confirm("Would you like to include special characters?")
 }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
