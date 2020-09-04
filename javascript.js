@@ -7,11 +7,12 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
-function generatePassword(){
-  // ALL YOUR CODE GOES HERE
+function generatePassword() {
+  var howManyCharacters = prompt(
+
+    "How many characaters would you like the password to be, between 8-128");
 }
 
 // Add event listener to generate button
